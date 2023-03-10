@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* Navbar */
 #navbar{
     padding: 3.5vh;
     background-color: rgb(241, 241, 241);
@@ -30,6 +32,8 @@
     color: white;
 }
 
+
+/* Bildene blir laget om til sirkler */
 #prosjekter img{
     object-fit: cover;
     width: 15vw;
@@ -40,8 +44,8 @@
     margin-bottom: 2vh;
 }
 
+/* Starter animasjonen når musa er over */
 #prosjekter img:hover{
-    clip-path: circle(100%);
     animation: size 0.5s ease-out 1;
     animation-play-state: running;
     animation-fill-mode: forwards;

@@ -5,6 +5,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* Navbar */
 #navbar{
     padding: 3.5vh;
     background-color: rgb(241, 241, 241);
@@ -32,6 +34,8 @@ body{
 #navbar .links a:hover{
     color: white;
 }
+
+
 
 #main{
     margin-top: 1vh;
