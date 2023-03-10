@@ -11,10 +11,10 @@ body{
 #navbar{
     padding: 3.5vh;
     background-color: rgb(241, 241, 241);
+    /* Legger til skygge under navbaren */
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
-    /* background-color: rgb(152, 250, 152); */
 }
 #navbar .links{
     font-size: 1.5vmax;
@@ -23,7 +23,9 @@ body{
 }
 #navbar .links a{
     margin: 5vw;
+    /* Fjerner streken under linker */
     text-decoration: none;
+    /* Font */
     font-family: "area-normal", sans-serif;
     font-weight: 400;
     font-style: normal;

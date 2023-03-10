@@ -5,19 +5,22 @@
 #navbar{
     padding: 3.5vh;
     background-color: rgb(241, 241, 241);
+    /* Legger til skygge under navbaren */
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
-    /* background-color: rgb(152, 250, 152); */
 }
 #navbar .links{
+    /* Font */
     font-size: 1.5vmax;
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 #navbar .links a{
     margin: 5vw;
+    /* Fjerner linjen under linker */
     text-decoration: none;
+    /* Font */
     font-family: "area-normal", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -32,8 +35,8 @@
     width: 15vw;
     height: 15vw;
     clip-path: circle(50%);
-    margin: 8.9vw;
-    margin-top: 17vh;
+    margin: 8.8vw;
+    margin-top: 8vh;
     margin-bottom: 2vh;
 }
 
@@ -47,25 +50,27 @@
 #prosjekter .text h1{
     display: inline-block;
     width: 15vw;
-    margin-left: 8.9vw;
-    margin-right: 8.9vw;
+    margin-left: 8.8vw;
+    margin-right: 8.8vw;
     text-align: center;
+    /* Font */
     font-family: "area-extended", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-#prosjekter .text p{
+#prosjekter .description p{
     display: inline-block;
-    width: 15vw;
-    margin-left: 8.9vw;
-    margin-right: 8.9vw;
-    text-align: center;
-    font-family: "area-extended", sans-serif;
+    width: 19vw;
+    margin-left: 6.8vw;
+    margin-right: 6.8vw;
+    /* Font */
+    font-family: "area-normal", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Animasjon som roterer og gjør sirkelen om til en firkant */
 @keyframes size {
     from {
         clip-path: circle(50%);

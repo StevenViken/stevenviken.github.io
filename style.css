@@ -8,19 +8,22 @@ body{
 #navbar{
     padding: 3.5vh;
     background-color: rgb(241, 241, 241);
+    /* Legger til skygge under navbaren */
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
-    /* background-color: rgb(152, 250, 152); */
 }
 #navbar .links{
+    /* Font */
     font-size: 1.5vmax;
     text-align: center;
+    /* Margin legger til størrelse til navbaren */
     margin-bottom: 2vh;
 }
 #navbar .links a{
     margin: 5vw;
     text-decoration: none;
+    /* Font */
     font-family: "area-normal", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -44,6 +47,7 @@ body{
     padding-bottom: 5vh;
     padding-top: 2vh;
     background-color: white;
+    /* Font */
     font-family: "area-normal", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -54,6 +58,7 @@ body{
     padding-top: 1vh;
     overflow-wrap: break-word;
     background-color: white;
+    /* Font */
     font-family: "area-extended", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -73,6 +78,7 @@ body{
 }
 
 #profile .circle p{
+    /* Font */
     font-size: 3.5vh;
 }
 
@@ -86,6 +92,8 @@ body{
     transform: scaleY(-1); */
 }
 
+
+/* Endrer teksten i sirkelen når du tar musa over */
 #profile .circle p span{
     content: ''
 }
@@ -96,6 +104,7 @@ body{
     content: 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB';
 }
 
+/* Lager en sirkel og animerer den med en spin animasjon som varer evig */
 #profile .circle{
     color: gainsboro;
     /* color: rgb(255, 166, 151); */
@@ -103,15 +112,19 @@ body{
     position: absolute;
     bottom: 0;
     right: 2vw;
+    /* break-word gjør at teksten ikke går evig langt men heller passer inn i formen som blir laget */
     overflow-wrap: break-word;
+    /* Her er delen som definerer animasjonen til sirkelen */
     animation-name: spin;
     animation-duration: 500000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    /* z-index gjør at sirkelen havner bakerst på nettsiden */
     z-index: -100;
     clip-path: circle();
 }
 
+/* Spin animasjonen starter på -10 grader og beveger seg til 350 grader. Dette er fordi da starter sirkelen litt på skrått */
 @keyframes spin {
     from {
         transform:rotate(-10deg);
@@ -121,6 +134,7 @@ body{
     }
 }
 
+/* Denne animasjonen zoomer inn bokstavene */
 @keyframes size {
     to {
         transform: scale(2);
