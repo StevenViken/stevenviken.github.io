@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    padding: 3.5vh;
+    background-color: rgb(241, 241, 241);
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    /* background-color: rgb(152, 250, 152); */
+}
+#navbar .links{
+    font-size: 1.5vmax;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+#navbar .links a{
+    margin: 5vw;
+    text-decoration: none;
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+#navbar .links a:hover{
+    color: white;
+}
+
+#prosjekter img{
+    object-fit: cover;
+    width: 15vw;
+    height: 15vw;
+    clip-path: circle(50%);
+    margin: 8.9vw;
+}
+
+#prosjekter img:hover{
+    clip-path: circle(100%);
+    animation: size 0.5s ease-out 1;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes size {
+    from {
+        clip-path: circle(50%);
+        transform:rotate(0deg);
+    }
+    to {
+        clip-path: circle(100%);
+        transform:rotate(360deg);
+    }           
+}

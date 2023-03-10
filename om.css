@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    padding: 3.5vh;
+    background-color: rgb(241, 241, 241);
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    /* background-color: rgb(152, 250, 152); */
+}
+#navbar .links{
+    font-size: 1.5vmax;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+#navbar .links a{
+    margin: 5vw;
+    text-decoration: none;
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+#navbar .links a:hover{
+    color: white;
+}
+#om img{
+    width: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+    margin-right: 6vw;
+    display: inline-flex;
+    z-index: 50;
+}
+#om .circle{
+    font-size: 1.5vw;
+    inline-size: 2vw;
+    width: 53vh;
+    position: absolute;
+    overflow-wrap: break-word;
+    background-color: white;
+    font-family: "area-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    margin-bottom: 25vh;
+    z-index: 100;
+}
+#main{
+    position: absolute;
+    top: 25vh;
+    left: 60vw;
+}
+#main h1{
+    font-size: 5vw;
+    inline-size: 20vw;
+    padding-bottom: 5vh;
+    padding-top: 2vh;
+    background-color: white;
+    font-family: "area-normal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#main p{
+    font-size: 1.5vw;
+    inline-size: 35vw;
+    overflow-wrap: break-word;
+    background-color: white;
+    font-family: "area-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

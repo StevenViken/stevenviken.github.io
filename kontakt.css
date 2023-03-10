@@ -1,0 +1,138 @@
+/* Gjør at du ikke kan scrolle på nettsiden */
+body{
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+#navbar{
+    padding: 3.5vh;
+    background-color: rgb(241, 241, 241);
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    /* background-color: rgb(152, 250, 152); */
+}
+#navbar .links{
+    font-size: 1.5vmax;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+#navbar .links a{
+    margin: 5vw;
+    text-decoration: none;
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+#navbar .links a:hover{
+    color: white;
+}
+
+/* Bestemmer font verdier */
+#contact p{
+    font-size: 3.5vh;
+    font-family: "area-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Endrer tekst når du tar musen over */
+#contact .telefon a span{
+    content: ''
+}
+#contact .telefon:hover a span{
+    display: none;
+}
+#contact .telefon:hover a:after{
+    content: ' +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093+47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093 +47 992 29 093';
+}
+#contact .email a span{
+    content: ''
+}
+#contact .email:hover a span{
+    display: none;
+}
+#contact .email:hover a:after{
+    content: ' terje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.noterje.sundfjord@brakar.no';
+}
+
+/* Lager sirklene og spin animasjon for sirklene */
+#contact .telefon a{
+    text-decoration: none;
+    color: gray;
+    /* color: rgb(255, 166, 151); */
+    float: left;
+    width: 40vw;
+    position: relative;
+    top: 5vh;
+    left: 7vw;
+    inline-size: 35vw;
+    overflow-wrap: break-word;
+    animation-name: spin;
+    animation-duration: 250000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -100;
+    clip-path: circle();
+}
+#contact .email a{
+    text-decoration: none;
+    color: gray;
+    /* color: rgb(255, 166, 151); */
+    float: right;
+    width: 40vw;
+    position: relative;
+    top: 5vh;
+    right: 7vw;
+    inline-size: 35vw;
+    overflow-wrap: break-word;
+    animation-name: spin2;
+    animation-duration: 250000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -100;
+    clip-path: circle();
+}
+
+/* Aktiverer animasjonene */
+#contact .telefon:hover a{
+    animation: spin 2500ms, size 0.5s ease-out 1;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+#contact .email:hover a{
+    animation: spin2 2500ms, size 0.5s ease-out 1;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+
+/* Animasjoner */
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes size {
+    to {
+        transform: scale(1.15);
+    }           
+}

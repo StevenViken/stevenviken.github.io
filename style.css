@@ -1,0 +1,128 @@
+body{
+    overflow: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    padding: 3.5vh;
+    background-color: rgb(241, 241, 241);
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    /* background-color: rgb(152, 250, 152); */
+}
+#navbar .links{
+    font-size: 1.5vmax;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+#navbar .links a{
+    margin: 5vw;
+    text-decoration: none;
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+#navbar .links a:hover{
+    color: white;
+}
+
+#main{
+    margin-top: 1vh;
+}
+
+#main .text{
+    position: absolute;
+    margin-top: 20.5vh;
+    margin-left: 7vw;
+}
+#main h1{
+    font-size: 5vw;
+    padding-bottom: 5vh;
+    padding-top: 2vh;
+    background-color: white;
+    font-family: "area-normal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#main p{
+    font-size: 1.5vw;
+    inline-size: 45vw;
+    padding-top: 1vh;
+    overflow-wrap: break-word;
+    background-color: white;
+    font-family: "area-extended", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#profile img{
+    width: 63vh;
+    position: absolute;
+    bottom: 0;
+    right: 2vw;
+    margin-right: 6vw;
+    display: inline-flex;
+    z-index: 50;
+}
+#profile img:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#profile .circle p{
+    font-size: 3.5vh;
+}
+
+#profile:hover p{
+    font-size: 4vh;
+    width: 50vw;
+    animation: size 1s ease-out 1;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    /* -webkit-transform: scaleY(-1);
+    transform: scaleY(-1); */
+}
+
+#profile .circle p span{
+    content: ''
+}
+#profile:hover p span{
+    display: none;
+}
+#profile:hover p:after{
+    content: 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB';
+}
+
+#profile .circle{
+    color: gainsboro;
+    /* color: rgb(255, 166, 151); */
+    width: 40vw;
+    position: absolute;
+    bottom: 0;
+    right: 2vw;
+    overflow-wrap: break-word;
+    animation-name: spin;
+    animation-duration: 500000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -100;
+    clip-path: circle();
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(-10deg);
+    }
+    to {
+        transform:rotate(350deg);
+    }
+}
+
+@keyframes size {
+    to {
+        transform: scale(2);
+    }           
+}
